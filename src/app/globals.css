@@ -9,6 +9,7 @@
   --secondary: #fdd9b5;
   /* --accent: #ffbaa6; */
   --accent: #3a1810;
+  --outline: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {

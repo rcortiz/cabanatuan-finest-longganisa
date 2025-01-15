@@ -1,18 +1,49 @@
-import ChevronLeftIcon from "@/component/icons/chevron-left";
-import ChevronRightIcon from "@/component/icons/chevron-right";
+"use client";
+
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+// import clsx from "clsx";
+
 import FacebookIcon from "@/component/icons/facebook";
 import InstagramIcon from "@/component/icons/instagram";
 import MailIcon from "@/component/icons/mail";
 import MapIcon from "@/component/icons/map";
 import PhoneIcon from "@/component/icons/phone";
 import WhatsappIcon from "@/component/icons/whatsapp";
-import Image from "next/image";
+import ChevronLeftIcon from "@/component/icons/chevron-left";
+import ChevronRightIcon from "@/component/icons/chevron-right";
+import FeaturedProduct from "@/component/sections/featured-product";
 
 export default function Home() {
+  // const [isLogoVisible, setIsLogoVisible] = useState(true);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setIsLogoVisible(false);
+  //     } else {
+  //       setIsLogoVisible(true);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto] overflow-y-auto bg-background">
-      <header className="h-30 flex items-center justify-center bg-primary p-4">
-        <ul className="text-md flex items-center gap-6 text-center font-medium uppercase text-background">
+      <header className="sticky left-0 top-0 z-50 flex w-full flex-col items-center justify-center bg-primary p-4">
+        <div className="relative h-[80px] w-[80px]">
+          <Image
+            src="/images/logo.png"
+            alt="Cabanatuan Finest Longganisa"
+            fill
+            className="absolute object-cover"
+          />
+        </div>
+        <ul className="flex w-full items-center justify-center space-x-24 pt-4 text-center text-sm font-bold uppercase text-background">
           <li className="underline-offset-4 hover:underline">
             <a href="#">Home</a>
           </li>
@@ -22,14 +53,6 @@ export default function Home() {
           <li className="underline-offset-4 hover:underline">
             <a href="#">Business</a>
           </li>
-          <div className="relative mx-6 h-24 w-24">
-            <Image
-              src="/images/logo.png"
-              alt="Cabanatuan Finest Longganisa"
-              fill
-              className="absolute object-cover"
-            />
-          </div>
           <li className="underline-offset-4 hover:underline">
             <a href="#">Brands</a>
           </li>
@@ -43,22 +66,117 @@ export default function Home() {
       </header>
       <main>
         <div className="carousel w-full">
-          <div id="slide1" className="carousel-item relative w-full">
+          <div id="hero1" className="carousel-item relative w-full">
             <div className="relative h-[1100px] w-full">
               <Image
-                src="/images/home-banner1.jpg"
+                src="/images/hero1.jpg"
                 alt="Cabanatuan Finest Longganisa"
                 fill
                 className="absolute object-fill"
               />
             </div>
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide4" className="btn btn-circle btn-outline">
-                <ChevronLeftIcon className="h-6 w-6" />
+              <a
+                href="#hero3"
+                className="rounded-full border-2 border-outline p-2"
+              >
+                <ChevronLeftIcon className="h-6 w-6 text-outline" />
               </a>
-              <a href="#slide2" className="btn btn-circle btn-outline">
-                <ChevronRightIcon className="h-6 w-6" />
+              <a
+                href="#hero2"
+                className="rounded-full border-2 border-outline p-2"
+              >
+                <ChevronRightIcon className="h-6 w-6 text-outline" />
               </a>
+            </div>
+          </div>
+          <div id="hero2" className="carousel-item relative w-full">
+            <div className="relative h-[1100px] w-full">
+              <Image
+                src="/images/hero2.jpg"
+                alt="Cabanatuan Finest Longganisa"
+                fill
+                className="absolute object-fill"
+              />
+            </div>
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a
+                href="#hero1"
+                className="rounded-full border-2 border-outline p-2"
+              >
+                <ChevronLeftIcon className="h-6 w-6 text-outline" />
+              </a>
+              <a
+                href="#hero3"
+                className="rounded-full border-2 border-outline p-2"
+              >
+                <ChevronRightIcon className="h-6 w-6 text-outline" />
+              </a>
+            </div>
+          </div>
+          <div id="hero3" className="carousel-item relative w-full">
+            <div className="relative h-[1100px] w-full">
+              <Image
+                src="/images/hero3.jpg"
+                alt="Cabanatuan Finest Longganisa"
+                fill
+                className="absolute object-fill"
+              />
+            </div>
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a
+                href="#hero2"
+                className="rounded-full border-2 border-outline p-2"
+              >
+                <ChevronLeftIcon className="h-6 w-6 text-outline" />
+              </a>
+              <a
+                href="#hero1"
+                className="rounded-full border-2 border-outline p-2"
+              >
+                <ChevronRightIcon className="h-6 w-6 text-outline" />
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* <FeaturedProduct /> */}
+        <div className="container h-[600px] w-full">
+          <div className="grid grid-cols-4 gap-4 p-4">
+            <div className="card overflow-hidden bg-gray-400 shadow-xl">
+              <Image
+                src="/images/hero1.jpg"
+                alt="Cabanatuan Finest Longganisa"
+                height={200}
+                width={300}
+              />
+              <div className="card-body">
+                <h2 className="card-title">Longganisa</h2>
+                <p>Longganisa Hamonado</p>
+              </div>
+            </div>
+            <div className="card overflow-hidden bg-gray-400 shadow-xl">
+              <Image
+                src="/images/hero1.jpg"
+                alt="Cabanatuan Finest Longganisa"
+                height={200}
+                width={300}
+              />
+              <div className="card-body">
+                <h2 className="card-title">Longganisa</h2>
+                <p>Longganisa Hamonado</p>
+              </div>
+            </div>
+            <div className="card overflow-hidden bg-gray-400 shadow-xl">
+              <Image
+                src="/images/hero1.jpg"
+                alt="Cabanatuan Finest Longganisa"
+                height={200}
+                width={300}
+              />
+              <div className="card-body">
+                <h2 className="card-title">Longganisa</h2>
+                <p>Longganisa Hamonado</p>
+              </div>
             </div>
           </div>
         </div>

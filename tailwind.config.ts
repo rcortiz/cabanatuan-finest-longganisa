@@ -10,6 +10,7 @@ export default {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         accent: "var(--accent)",
+        outline: "var(--outline)",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
