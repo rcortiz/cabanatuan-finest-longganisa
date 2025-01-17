@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cabanatuan Finest Longganisa
+
+Official website for Cabanatuan Finest Longganisa, a hub for premium and authentic longganisa from Cabanatuan City.
+
+## 🚧 Work in Progress 🚧
+
+This project is currently under development. New features, enhancements, and functionalities are being added regularly to provide a seamless user experience.
+
+### Built With
+
+- [Next.js](https://nextjs.org/) - A full-stack open-source React framework for building scalable and performant web applications.
+- [DaisyUI](https://daisyui.com/) - A Tailwind CSS component library for creating modern and accessible user interfaces.
+- [GraphQL](https://graphql.org/) - An open-source query language for APIs and a runtime for fulfilling queries.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid and responsive UI development.
+- [Sanity CMS](https://www.sanity.io/) - A flexible and customizable content management system for structured content.
 
 ## Getting Started
 
-First, run the development server:
+Follow the steps below to set up the project locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Node.js (Latest version)**: Download and install Node.js from the [official website](https://nodejs.org).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **npm (Latest version)**:
+  ```sh
+  npm install npm@latest -g
+  ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. Clone the repository via HTTPS or SSH:
 
-To learn more about Next.js, take a look at the following resources:
+   - HTTPS:
+     ```sh
+     git clone https://github.com/rcortiz/cabanatuan-finest-longganisa.git
+     ```
+   - SSH:
+     ```sh
+     git clone git@github.com:rcortiz/cabanatuan-finest-longganisa.git
+     ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Create a `.env` file and populate it with the necessary variables. Use the `env.example` file as a reference.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install project dependencies:
 
-## Deploy on Vercel
+   ```sh
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Set up Sanity CMS:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   - Install the Sanity CLI globally:
+     ```sh
+     npm install -g @sanity/cli
+     ```
+   - Initialize Sanity in the project directory:
+     ```sh
+     sanity init
+     ```
+
+5. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+
+## Deployment
+
+Deploy your application using one of the following platforms for optimal performance and reliability:
+
+- [Vercel](https://vercel.com) - Seamlessly deploy Next.js applications with global edge network.
+- [Netlify](https://www.netlify.com/) - A powerful platform for modern web projects.
+
+Refer to their respective documentation for step-by-step deployment instructions.
+
+## Contact
+
+For inquiries, feedback, or support, please reach out:
+
+- **Ralph Ortiz**
+  - 📧 Email: [rcortiz.dev@gmail.com](mailto:rcortiz.dev@gmail.com)
+  - 🌐 Portfolio: [https://rcortiz-v2.vercel.app/](https://rcortiz-v2.vercel.app/)
