@@ -6,10 +6,10 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="flex h-80 w-full flex-col items-center justify-center bg-secondary">
-      <div className="text-tx-accent container">
+      <div className="container p-10 text-tx-accent">
         <div className="grid grid-cols-4">
           <div className="space-y-2">
-            <h2 className="font-semibold">Company</h2>
+            <h4 className="font-semibold">Company</h4>
             <ul className="text-sm">
               <li className="mb-2">
                 <a href="#">About Us</a>
@@ -23,7 +23,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-2">
-            <h2 className="font-semibold">Business</h2>
+            <h4 className="font-semibold">Business</h4>
             <ul className="text-sm">
               <li className="mb-2">
                 <a href="#">Food Store</a>
@@ -37,7 +37,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-2">
-            <h2 className="font-semibold">Careers</h2>
+            <h4 className="font-semibold">Careers</h4>
             <ul className="text-sm">
               <li className="mb-2">
                 <a href="#">Job Opening</a>
@@ -48,7 +48,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-2">
-            <h2 className="font-semibold">Resources</h2>
+            <h4 className="font-semibold">Resources</h4>
             <ul className="text-sm">
               <li className="mb-2">
                 <a href="#">FAQs</a>

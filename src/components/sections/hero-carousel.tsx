@@ -19,11 +19,11 @@ export default function HeroCarousel() {
           />
         </div>
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#hero3" className="rounded-full border-2 border-outline p-2">
-            <ChevronLeftIcon className="h-6 w-6 text-outline" />
+          <a href="#hero3" className="border-outline rounded-full border-2 p-2">
+            <ChevronLeftIcon className="text-outline h-6 w-6" />
           </a>
-          <a href="#hero2" className="rounded-full border-2 border-outline p-2">
-            <ChevronRightIcon className="h-6 w-6 text-outline" />
+          <a href="#hero2" className="border-outline rounded-full border-2 p-2">
+            <ChevronRightIcon className="text-outline h-6 w-6" />
           </a>
         </div>
       </div>
@@ -37,11 +37,11 @@ export default function HeroCarousel() {
           />
         </div>
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#hero1" className="rounded-full border-2 border-outline p-2">
-            <ChevronLeftIcon className="h-6 w-6 text-outline" />
+          <a href="#hero1" className="border-outline rounded-full border-2 p-2">
+            <ChevronLeftIcon className="text-outline h-6 w-6" />
           </a>
-          <a href="#hero3" className="rounded-full border-2 border-outline p-2">
-            <ChevronRightIcon className="h-6 w-6 text-outline" />
+          <a href="#hero3" className="border-outline rounded-full border-2 p-2">
+            <ChevronRightIcon className="text-outline h-6 w-6" />
           </a>
         </div>
       </div>
@@ -55,11 +55,11 @@ export default function HeroCarousel() {
           />
         </div>
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#hero2" className="rounded-full border-2 border-outline p-2">
-            <ChevronLeftIcon className="h-6 w-6 text-outline" />
+          <a href="#hero2" className="border-outline rounded-full border-2 p-2">
+            <ChevronLeftIcon className="text-outline h-6 w-6" />
           </a>
-          <a href="#hero1" className="rounded-full border-2 border-outline p-2">
-            <ChevronRightIcon className="h-6 w-6 text-outline" />
+          <a href="#hero1" className="border-outline rounded-full border-2 p-2">
+            <ChevronRightIcon className="text-outline h-6 w-6" />
           </a>
         </div>
       </div>
