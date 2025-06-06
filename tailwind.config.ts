@@ -7,25 +7,18 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
-        accent: "var(--accent)",
-        "tx-primary": "var(--tx-primary)",
-        "tx-secondary": "var(--tx-secondary)",
-        "tx-accent": "var(--tx-accent)",
-        "base-100": "var(--base-100)",
-        "base-200": "var(--base-200)",
-        "base-300": "var(--base-300)",
-      },
-      fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
-        serif: ["var(--font-playfair)", "serif"],
-      },
-    },
+    extend: {},
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#bd1220",
+          secondary: "#ffffff",
+          "base-100": "#ffffff",
+        },
+      },
+    ],
+  },
 } satisfies Config;

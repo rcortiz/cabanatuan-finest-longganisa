@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Quicksand, Imprima } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/sections/header";
+import Header from "@/components/sections/navbar";
 import Footer from "@/components/sections/footer";
+import Banner from "@/components/ui/banner-notif";
 
-const inter = Inter({
-  variable: "--font-inter",
+const imprima = Imprima({
+  variable: "--font-imprima",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400"],
 });
 
-const playfair_display = Playfair_Display({
-  variable: "--font-playfair",
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -29,9 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair_display.variable} font-inte antialiased`}
+        className={`${imprima.variable} ${quicksand.variable} font-inte antialiased`}
       >
-        <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto] overflow-y-auto bg-background">
+        <div className="bg-background grid min-h-[100dvh] grid-rows-[auto_1fr_auto] overflow-y-auto">
+          <Banner />
           <Header />
           <main>{children}</main>
           <Footer />

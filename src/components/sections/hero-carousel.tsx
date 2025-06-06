@@ -1,67 +1,22 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-
-import ChevronLeftIcon from "../icons/chevron-left";
-import ChevronRightIcon from "../icons/chevron-right";
 
 export default function HeroCarousel() {
   return (
-    <div className="carousel w-full">
-      <div id="hero1" className="carousel-item relative w-full">
-        <div className="relative h-[1100px] w-full">
-          <Image
-            src="/images/hero1.jpg"
-            alt="Cabanatuan Finest Longganisa"
-            fill
-            className="absolute object-fill"
-          />
-        </div>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#hero3" className="border-outline rounded-full border-2 p-2">
-            <ChevronLeftIcon className="text-outline h-6 w-6" />
-          </a>
-          <a href="#hero2" className="border-outline rounded-full border-2 p-2">
-            <ChevronRightIcon className="text-outline h-6 w-6" />
-          </a>
-        </div>
-      </div>
-      <div id="hero2" className="carousel-item relative w-full">
-        <div className="relative h-[1100px] w-full">
-          <Image
-            src="/images/hero2.jpg"
-            alt="Cabanatuan Finest Longganisa"
-            fill
-            className="absolute object-fill"
-          />
-        </div>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#hero1" className="border-outline rounded-full border-2 p-2">
-            <ChevronLeftIcon className="text-outline h-6 w-6" />
-          </a>
-          <a href="#hero3" className="border-outline rounded-full border-2 p-2">
-            <ChevronRightIcon className="text-outline h-6 w-6" />
-          </a>
-        </div>
-      </div>
-      <div id="hero3" className="carousel-item relative w-full">
-        <div className="relative h-[1100px] w-full">
-          <Image
-            src="/images/hero3.jpg"
-            alt="Cabanatuan Finest Longganisa"
-            fill
-            className="absolute object-fill"
-          />
-        </div>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#hero2" className="border-outline rounded-full border-2 p-2">
-            <ChevronLeftIcon className="text-outline h-6 w-6" />
-          </a>
-          <a href="#hero1" className="border-outline rounded-full border-2 p-2">
-            <ChevronRightIcon className="text-outline h-6 w-6" />
-          </a>
-        </div>
+    <div className="relative h-screen bg-[url(/images/hero1.jpg)] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      <div className="relative z-10 flex h-full flex-col items-center justify-center">
+        <h2 className="mb-4 text-center text-[5rem] text-white">
+          BEST MEATS AND MUCH MORE
+        </h2>
+        <p className="mb-6 text-white">
+          Discover organic, sustainable and seasonal food from our farm
+        </p>
+        <button className="btn btn-outline btn-secondary text-lg">
+          Shop Now
+        </button>
       </div>
     </div>
   );

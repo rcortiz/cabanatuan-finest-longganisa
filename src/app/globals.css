@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "daisyui";
 
 * {
   margin: 0;
@@ -10,32 +11,36 @@
 
 h1,
 h2,
-h3 {
-  font-family: var(--font-playfair);
-}
-
+h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: var(--font-quicksand);
+  font-weight: bold;
+}
+
 span,
 p,
 li,
 a {
-  font-family: var(--font-inter);
+  font-family: var(--font-imprima);
+}
+
+/* Custom Daisy UI specific variables */
+
+.menu {
+  --menu-active-bg: none;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #c5363a;
+  --primary: #bd1220;
   --secondary: #fde8d3;
   --accent: #ffbaa6;
   --tx-primary: #000000;
   --tx-secondary: #ffffff;
   --tx-accent: #3a1810;
-  --base-100: #eeede8;
-  --base-200: #dfdedd;
-  --base-300: #d0d0cc;
 }
 
 @media (prefers-color-scheme: light) {

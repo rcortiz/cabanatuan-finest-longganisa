@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Timeline() {
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 max-h-screen">
       <ul className="timeline timeline-vertical timeline-snap-icon">
         <li>
           <div className="timeline-start mb-10">

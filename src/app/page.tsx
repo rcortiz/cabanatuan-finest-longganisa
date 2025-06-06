@@ -8,10 +8,10 @@ import Timeline from "@/components/sections/timeline";
 
 export default function Home() {
   return (
-    <div className="h-[900px]">
-      {/* <HeroCarousel /> */}
-      <Timeline />
-      <FeaturedProduct />
+    <div>
+      <HeroCarousel />
+      {/* <Timeline /> */}
+      {/* <FeaturedProduct /> */}
     </div>
   );
 }
