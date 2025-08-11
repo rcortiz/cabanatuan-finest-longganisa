@@ -1,3 +1,4 @@
+import { Yellowtail } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -7,16 +8,24 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        imprima: ["var(--font-imprima)"],
+        quicksand: ["var(--font-quicksand)"],
+        oswald: ["var(--font-oswald)"],
+        yellowtail: ["var(--font-yellowtail)"],
+        barlow: ["var(--font-barlow)"],
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
       {
         mytheme: {
-          primary: "#bd1220",
+          primary: "#b41f25",
           secondary: "#ffffff",
-          "base-100": "#ffffff",
+          accent: "#1b1b1b",
         },
       },
     ],

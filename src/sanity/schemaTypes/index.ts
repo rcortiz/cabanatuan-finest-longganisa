@@ -7,6 +7,7 @@ import { authorType } from "./authorType";
 import { navChildItemType } from "./navChildItemType";
 import { navItemType } from "./navItemType";
 import { navigationType } from "./navigationType";
+import { featuredProductType } from "./featuredProductType";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -17,5 +18,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     navChildItemType,
     navItemType,
     navigationType,
+    featuredProductType,
   ],
 };

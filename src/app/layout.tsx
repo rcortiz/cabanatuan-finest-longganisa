@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, Quicksand, Imprima } from "next/font/google";
+import {
+  Quicksand,
+  Imprima,
+  Oswald,
+  Yellowtail,
+  Barlow,
+} from "next/font/google";
 import "./globals.css";
-import Header from "@/components/sections/navbar";
+import Header from "@/components/sections/header/header";
 import Footer from "@/components/sections/footer";
-import Banner from "@/components/ui/banner-notif";
+import Banner from "@/components/ui/banner";
 
 const imprima = Imprima({
   variable: "--font-imprima",
@@ -15,6 +21,24 @@ const quicksand = Quicksand({
   variable: "--font-quicksand",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+const oswald = Oswald({
+  variable: "--font-oswald",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
+
+const yellowtail = Yellowtail({
+  variable: "--font-yellowtail",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const barlow = Barlow({
+  variable: "--font-barlow",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -30,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${imprima.variable} ${quicksand.variable} font-inte antialiased`}
+        className={`${imprima.variable} ${quicksand.variable} ${oswald.variable} ${yellowtail.variable} ${barlow.variable} antialiased`}
       >
         <div className="bg-background grid min-h-[100dvh] grid-rows-[auto_1fr_auto] overflow-y-auto">
           <Banner />
