@@ -5,6 +5,7 @@ import {
   Oswald,
   Yellowtail,
   Barlow,
+  Rubik,
 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/sections/header/header";
@@ -41,6 +42,12 @@ const barlow = Barlow({
   weight: ["400"],
 });
 
+const rubik = Rubik({
+  variable: "--font-rubik",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
 export const metadata: Metadata = {
   title: "Cabanatuan Finest Longganisa",
   description: "Official website for Cabanatuan Finest Longganisa",
@@ -54,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${imprima.variable} ${quicksand.variable} ${oswald.variable} ${yellowtail.variable} ${barlow.variable} antialiased`}
+        className={`${imprima.variable} ${quicksand.variable} ${oswald.variable} ${yellowtail.variable} ${barlow.variable} ${rubik.variable} antialiased`}
       >
         <div className="bg-background grid min-h-[100dvh] grid-rows-[auto_1fr_auto] overflow-y-auto">
           <Banner />

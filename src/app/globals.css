@@ -11,14 +11,16 @@
 h1,
 h2,
 h3 {
-  font-family: var(--font-oswald);
+  font-family: var(--font-rubik);
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 h4,
 h5,
 h6 {
-  font-family: var(--font-quicksand);
-  font-weight: bold;
+  font-family: var(--font-rubik);
+  font-weight: 500;
 }
 
 span,

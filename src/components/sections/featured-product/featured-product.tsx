@@ -1,7 +1,4 @@
-import Link from "next/link";
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { client } from "@/sanity/lib/client";
 import { featuredProductsQuery } from "@/sanity/queries/featuredProducts";
 import { FeaturedItem, FeaturedProducts } from "./types/featured-product-types";
@@ -30,8 +27,8 @@ export default async function FeaturedProduct() {
         <p className="font-yellowtail text-[28px] text-primary">
           Our Meat Catalog
         </p>
-        <h2 className="pb-4 text-[60px] font-bold uppercase">{sectionTitle}</h2>
-        <p>{sectionDescription}</p>
+        <h2 className="pb-2 text-[48px]">{sectionTitle}</h2>
+        <p className="text-base-content">{sectionDescription}</p>
       </header>
 
       <ProductCarousel items={items} />

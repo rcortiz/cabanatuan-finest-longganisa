@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FeaturedItem } from "./types/featured-product-types";
-import { urlFor } from "@/sanity/lib/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,13 +21,6 @@ export default function ProductCarousel({ items }: ProductCarouselProps) {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={15}
       slidesPerView={4}
-      // navigation
-      // pagination={{ clickable: true }}
-      // breakpoints={{
-      //   0: { slidesPerView: 1 },
-      //   640: { slidesPerView: 2 },
-      //   1024: { slidesPerView: 3 },
-      // }}
       className="w-full max-w-6xl py-10"
     >
       {items.map((item, idx) => {

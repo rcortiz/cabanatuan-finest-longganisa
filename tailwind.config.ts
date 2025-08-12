@@ -15,6 +15,7 @@ export default {
         oswald: ["var(--font-oswald)"],
         yellowtail: ["var(--font-yellowtail)"],
         barlow: ["var(--font-barlow)"],
+        rubik: ["var(--font-rubik)"],
       },
     },
   },
@@ -24,8 +25,29 @@ export default {
       {
         mytheme: {
           primary: "#b41f25",
+          "primary-content": "#ffffff",
           secondary: "#ffffff",
+          "secondary-content": "#000000",
           accent: "#1b1b1b",
+          "accent-content": "#163835",
+          neutral: "#3d4451",
+          "neutral-content": "#ffffff",
+          "base-100": "#ffffff",
+          "base-200": "#f9fafb",
+          "base-300": "#d1d5db",
+          "base-content": "#333333",
+
+          info: "#3abff8",
+          "info-content": "#ffffff",
+
+          success: "#36d399",
+          "success-content": "#ffffff",
+
+          warning: "#fbbd23",
+          "warning-content": "#ffffff",
+
+          error: "#f87272",
+          "error-content": "#ffffff",
         },
       },
     ],
